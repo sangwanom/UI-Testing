@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "ui testing"
+version = "0.1.0"
+description = ""
+authors = ["sangwao <om_sangwan@otpp.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+playwright = "^1.45.1"
+pytest = "^8.3.2"
+pytest-playwright = "^0.5.1"
+pytest-html = "^4.1.1"
+requests = "^2.32.3"
+python-dotenv = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
