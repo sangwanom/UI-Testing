@@ -11,4 +11,5 @@ class Config:
     EXPECTED_TITLE = os.getenv("EXPECTED_TITLE")
     CLIENT_ID = os.getenv("CLIENT_ID")
     REDIRECT_URI = os.getenv("REDIRECT_URI")
+    WEBSITE_URL = os.getenv('WEBSITE_URL')
     
