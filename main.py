@@ -11,7 +11,7 @@ EXPECTED_IMAGE_ANALYZER_HEADER = "Image Analyzer"
 
 def main():
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False)
+        browser = p.chromium.launch(channel='msedge',headless=False)
         page = browser.new_context().new_page()
         handle_login(page)
         
@@ -29,7 +29,7 @@ def main():
         tab_selectors = [
             'a[href="https://dna.dev.otpp.com/otpp-chatgpt-playground/Chatbot"]',        # Selector for Chatbot
             'a[href="https://dna.dev.otpp.com/otpp-chatgpt-playground/File_Query"]',     # Selector for File Query
-            'a[href="https://dna.dev.otpp.com/otpp-chatgpt-playground/Image_Upload"]',   # Selector for Image Upload
+            'a[href="https://dna.dev.otpp.com/otpp-chatgpt-playground/Image_Analyzer"]',   # Selector for Image Upload
             'a[href="https://dna.dev.otpp.com/otpp-chatgpt-playground/Translate_Files"]',# Selector for Translate Files
             'a[href="https://dna.dev.otpp.com/otpp-chatgpt-playground/Docu_Compare"]'    # Selector for Docu Compare
         ]
